@@ -1,0 +1,195 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0px;
+  }
+  .skills-container h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .emoji {
+        text-align: center;
+    
+  }
+  .skillsImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color:  #576cbc;
+
+  }
+  .emoji:hover{
+    
+    color: white;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+  }
+.html{
+    
+    color: rgb(165, 75, 42);
+    font-size: 10rem;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.css{
+    margin-top: 15px;
+    color: rgb(0, 183, 255);
+    font-size: 9rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.js{
+    
+    color: yellow;
+    font-size: 10rem;
+    text-align: center;
+    cursor: pointer;
+}
+.jq{
+    color: rgb(1, 42, 145);
+    font-size: 10rem;
+    text-align: center;
+    cursor: pointer;
+}
+.bs{
+    font-size: 10rem;
+    color: purple;
+    cursor: pointer;
+    text-align: center;
+}
+.react{
+    color: rgb(0, 183, 255);
+    font-size: 10rem;
+    text-align: center;
+    cursor: pointer;
+}
+.ts{
+    color: rgb(0, 183, 255);
+    font-size: 10rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+.git{
+    color: tomato;
+    text-align: center;
+    cursor: pointer;
+    font-size: 10rem;
+}
+.github {
+    color: black;
+    font-size: 10rem;
+    cursor: pointer;
+  }
+  .node{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
+  }
+  
+  .mongo{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    
+  }
+  .sql{
+    display: flex;
+    width: 150px;
+    height: 150px;
+   
+  }
+  .power{
+    display: flex;
+    width: 150px;
+    height: 150px;
+ margin-left: -15px;
+ 
+  }
+  .figma{
+    display: flex;
+    width: 20px;
+    height: 200px;
+  margin-top: -15px;
+  }
+  
+@media (max-width: 1024px) {
+    .skills {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills {
+      grid-template-columns: repeat(2, 1fr); /* 2 icons per row on smaller screens */
+      gap: 1rem;
+    }
+  
+    .skills-container h1 {
+      font-size: 2rem; /* Reduce font size of title */
+    }
+  
+    .html,
+    .css,
+    .js,
+    .jq,
+    .bs,
+    .react,
+    .ts,
+    .git,
+    .github {
+      font-size: 6rem; 
+    }
+  
+    .node,
+    .power,
+    .figma {
+      width: 120px; 
+      height: 120px; 
+    }
+  
+     }
+  
+  @media (max-width: 480px) {
+    .skills-container h1 {
+      font-size: 1.5rem; /* Further reduce font size on extra small screens */
+    }
+  
+    .html,
+    .css,
+    .js,
+    .jq,
+    .bs,
+    .react,
+    .ts,
+    .git,
+    .github {
+      font-size: 5rem; /* Further reduce icon size */
+    }
+  
+    .node,
+    .power,
+    .figma {
+      width: 100px; /* Further adjust width for images */
+      height: 100px; /* Further adjust height for images */
+    }
+  
+  }
