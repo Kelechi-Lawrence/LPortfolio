@@ -2,7 +2,7 @@ import React from "react";
 import { CgMail } from "react-icons/cg";
 import { IoLogoLinkedin } from "react-icons/io";
 import { FaSquareGithub } from "react-icons/fa6";
-import "./contact.css";
+import "../css/contact.css";
 
 function Contact() {
   return (

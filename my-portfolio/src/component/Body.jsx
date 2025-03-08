@@ -1,6 +1,6 @@
 import React from "react";
 import profileImage from "../assets/profile.jpg";
-import "./body.css";
+import "../css/body.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { IoLogoLinkedin } from "react-icons/io";
@@ -13,7 +13,7 @@ const Body = () => {
           <h1> Hi i'm Lawrence</h1>
         </div>
         <p className="container-description">
-          Creative and passionate Software Engineer experienced in dveloping
+          Creative and passionate Software Engineer experienced in developing
           scalable full stack applications,i enjoy tackling challenges, writing
           clean code, and bringing impactful ideas to life .
         </p>

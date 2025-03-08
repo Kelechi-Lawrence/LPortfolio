@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
-import "./Navbar.css";
+import "../css/Navbar.css";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

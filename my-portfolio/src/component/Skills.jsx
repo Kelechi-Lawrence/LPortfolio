@@ -1,6 +1,6 @@
 import React from "react";
 import skillImage from "../assets/skillimg.png";
-import "./skills.css";
+import "../css/skills.css";
 import { TiHtml5 } from "react-icons/ti";
 import { FaCss3Alt } from "react-icons/fa6";
 import { TbBrandJavascript } from "react-icons/tb";
