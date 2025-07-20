@@ -1,0 +1,120 @@
+.custom-timeline-wrapper {
+  background-color: #04152d;
+  padding: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100vw;
+}
+
+.custom-timeline-wrapper h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  padding-left: 8px;
+}
+
+.custom-timeline {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  position: relative;
+  min-width: 800px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #576cbc;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #576cbc;
+}
+
+.timeline-line {
+  height: 4px;
+  width: 60px;
+  background-color: #576cbc;
+  position: absolute;
+  top: 7px;
+  left: 100%;
+  z-index: 1;
+}
+.job-card {
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+  width: 50vw;
+  box-shadow: 0 0 15px rgba(87, 108, 188, 0.6);
+  text-align: left;
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom */
+}
+
+.job-card:hover {
+  transform: scale(1.05); /* Zoom in slightly */
+  box-shadow: 0 0 25px rgba(87, 108, 188, 0.9); /* Optional glow effect */
+}
+
+.job-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 4px;
+  text-shadow: 0 0 8px #576cbc;
+}
+
+.job-date {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.job-role {
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.job-desc {
+  font-size: 0.85rem;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .job-card {
+    width: 60vw;
+    padding: 12px;
+  }
+
+  .custom-timeline {
+    gap: 40px;
+  }
+
+  .job-title {
+    font-size: 1rem;
+  }
+
+  .job-desc,
+  .job-role,
+  .job-date {
+    font-size: 0.75rem;
+  }
+}
+
+/* Make the timeline expand on large screens */
+@media (min-width: 1024px) {
+  .custom-timeline {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+:root {
+    --mainColor: rgb(3, 3, 88);
+    --mainColorLight: #5767aa;
+    --textColor: #fff;
+  }
+  
+  .skyblue{
+    color:  #00CFFD;
+  }

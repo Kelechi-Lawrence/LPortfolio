@@ -1,0 +1,28 @@
+{
+  "portfolio": [
+    {
+      "cover": "/portfolio/heart-monitor.png",
+      "title": "Heart Monitoring Mobile App",
+      "description": "React Native, EAS Build, Bluetooth LE, Firebase",
+      "url": "https://github.com/Kelechi-Lawrence/Monitoring"
+    },
+    {
+      "cover": "/portfolio/ecommerce.jpg",
+      "title": "E-commerce React Platform",
+      "description": "React, API, CSS, React Router",
+      "url": "https://github.com/Kelechi-Lawrence/Ecommerce"
+    },
+    {
+      "cover": "/portfolio/movie-app.jpg",
+      "title": "Movie Search App",
+      "description": "React, Movie API, CSS",
+      "url": "https://github.com/Kelechi-Lawrence/MovieKC"
+    },
+    {
+      "cover": "../portfolio/csp.jpg",
+      "title": "Crawford Startup Pitch (CSP)",
+      "description": "Next.js, TypeScript, Tailwind, CSS",
+      "url": "https://github.com/Kelechi-Lawrence/crawford-pitch"
+    }
+  ]
+}
