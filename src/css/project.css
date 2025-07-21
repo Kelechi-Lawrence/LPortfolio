@@ -71,7 +71,9 @@ font-size: 3rem;
   color: #fff;
   font-weight: 700;
 }
-
+.top{
+  margin-top: 2rem;
+}
 .btn {
   display: flex;
   align-items: center;

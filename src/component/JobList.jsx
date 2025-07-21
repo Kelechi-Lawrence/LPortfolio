@@ -18,7 +18,7 @@ const JobList = () => {
     {
       title: "Deo Potential Schools",
       role: "Web Developer",
-      date: "Jan 2022 – Mar 2022",
+      date: "Jan 2025 – Mar 2025",
       description:
         "Led and built the school’s website, boosting online presence and resource access.",
       color: "primary",

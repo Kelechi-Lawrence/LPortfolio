@@ -16,10 +16,10 @@ const About = () => {
         <span className="aboutMe" data-aos="fade-up">
           Get to <span className="skyblue">Know</span>
         </span>
-        <span className="aboutMe " data-aos="fade-up">
+        <span className="aboutMe " data-aos="fade-up ">
           Me
         </span>
-        <span data-aos="fade-up">
+        <span data-aos="zoom-in-up">
           Raised in Nigeria, my engineering journey has been driven by a passion
           for developing meaningful solutions,
           <br /> including mobile applications, web platforms, and AI tools that

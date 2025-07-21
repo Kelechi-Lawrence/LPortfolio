@@ -38,11 +38,11 @@ const Project = () => {
           {" "}
           My <span className="skyblue">Projects</span>
         </h1>
-        <h3 className="text-white text-center font-bold m-4">
+        <h2 className="text-white text-center font-bold m-4 text-lg">
           <span className="skyblue">Note:</span> More projects are available on
           my GitHub.
-        </h3>
-        <div>{renderPortfolio(portfolioData.portfolio)}</div>
+        </h2>
+        <div className="top">{renderPortfolio(portfolioData.portfolio)}</div>
       </div>
     </>
   );
