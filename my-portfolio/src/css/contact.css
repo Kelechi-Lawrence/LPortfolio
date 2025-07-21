@@ -1,0 +1,49 @@
+:root {
+    --mainColor: #0b2447;
+    --mainColorLight: #576cbc;
+    --textColor: #fff;
+    --colorbg: #04152d;
+    --color-secondary: #19376d;
+}
+
+.fcontact {
+    background-color: #204b9cbb;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem; /* Maintain spacing on larger screens */
+    text-align: center;
+}
+
+/* Keep default styles for large screens */
+.contact-links {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-title {
+    color: var(--textColor);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contact-links li {
+    list-style: none;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+@media (max-width: 1024px) {
+    .fcontact {
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+
+    .footer-title {
+        margin-top: 1rem; 
+    }
+}

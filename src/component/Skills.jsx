@@ -35,9 +35,11 @@ const Skills = () => {
           className="skillsImage"
           src={skillImage}
           alt="skills"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
         />
       </span>
-      <h1>
+      <h1 data-aos="fade-up">
         My <span className="skyblue">skills</span>
       </h1>
       <div className="skills">

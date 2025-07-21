@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import "../css/contact.css";
 import emailjs from "@emailjs/browser";
+import AOS from "aos";
 
 function Contact() {
   const form = useRef();
@@ -25,11 +26,14 @@ function Contact() {
         }
       );
   };
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
     <div className="contact-wrapper">
       <div className="contact-container">
-        <div className="contact-text">
+        <div className="contact-text" data-aos="fade-right">
           <motion.h1 className="contact-heading">
             Get in <span className="skyblue">Touch</span>
           </motion.h1>
@@ -40,7 +44,13 @@ function Contact() {
           </motion.p>
         </div>
 
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="contact-form"
+          data-aos="fade-up-right"
+          data-aos-delay="400"
+        >
           <div className="form-group">
             <label>Full Name</label>
             <input
