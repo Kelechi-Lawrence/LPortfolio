@@ -73,6 +73,8 @@ font-size: 3rem;
 }
 
 .btn {
+  display: flex;
+  align-items: center;
   margin-top: 30px;
   margin-bottom: 10px;
   padding: 0 23px;

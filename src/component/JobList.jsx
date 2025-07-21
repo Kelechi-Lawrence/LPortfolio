@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Timeline,
   TimelineItem,
@@ -8,8 +8,12 @@ import {
   TimelineContent,
 } from "@mui/lab";
 import { Typography, Box } from "@mui/material";
+import AOS from "aos";
 import "../css/joblist.css";
 const JobList = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const jobs = [
     {
       title: "Deo Potential Schools",
@@ -24,6 +28,14 @@ const JobList = () => {
       role: "B.Sc. Computer Science",
       date: "2020 – 2024",
       description: "Graduated in Computer Science to make my parents proud.",
+      color: "primary",
+    },
+    {
+      title: "GDSC Crawford",
+      role: "Member (Web Development)",
+      date: "Nov 2023 – Jun 2024",
+      description:
+        "Participated in web development study jams and workshops focused on front-end frameworks like React and version control with Git.",
       color: "primary",
     },
     {
@@ -46,7 +58,9 @@ const JobList = () => {
 
   return (
     <div className="timeline-wrapper">
-      <h2 className="text-white text-3xl font-bold">Timeline</h2>
+      <h2 className="tline" data-aos="fade-right">
+        Timeline
+      </h2>
       <Timeline
         position="right"
         sx={{

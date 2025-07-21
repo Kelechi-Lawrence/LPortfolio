@@ -3,7 +3,7 @@ import "../css/project.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import portfolioData from "../Data/portfolio.json";
-
+import { FaGithub } from "react-icons/fa";
 const Project = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -22,7 +22,7 @@ const Project = () => {
                 className="btn"
                 onClick={() => window.open(port.url, "_blank")}
               >
-                View
+                View <FaGithub className="transition-colors" size={20} />
               </button>
             </div>
           </div>
