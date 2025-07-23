@@ -110,7 +110,7 @@ html {
   transform: translateY(-10px);
   transition: 0.3s ease-in;
   pointer-events: none;
-  z-index: 9999; /* Add this line */
+  z-index: 9999; 
 }
 
 /* Show Menu When Open */

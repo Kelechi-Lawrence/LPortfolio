@@ -21,7 +21,7 @@ const Body = () => {
           <Typewriter
             words={[
               "Software Engineer.",
-              "Full-Stack.",
+              // "Full-Stack.",
               "Previous Sanlam|Allianz Insurance Intern",
               "Incoming Energia Limited intern",
             ]}
