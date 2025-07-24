@@ -1,4 +1,3 @@
-
 :root {
   --mainColor: #0b2447;
   --mainColorLight: #576cbc;
@@ -21,12 +20,6 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
-.typewriter-text {
-  font-size: 2rem;
-  color: var(--color-text);
-  margin-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
-}
 
 .body-content {
   display: flex;
@@ -35,24 +28,36 @@ body {
   color: var(--color-text);
   z-index: 1;
 }
-.p-cyan{
-  color: #00CFFD;
+
+.p-cyan {
+  color: #00cffd;
   font-weight: 700;
+  margin-bottom: 3rem;
+  margin-left: 10px;
 }
+
 .container-title {
   font-size: 4rem;
   font-weight: 700;
-margin-bottom: 0px;
+  margin-bottom: 0px;
   font-family: 'Poppins', sans-serif;
 }
+
 .container-title span {
-  color: #00CFFD;
+  color: #00cffd;
 }
 
+.typewriter-text {
+  font-size: 2rem;
+  color: var(--color-text);
+  margin-bottom: 15px;
+ 
+}
 
 .container-description {
-  font-size: 16px;
   
+  font-size: 16px;
+  width: 50vw;
   margin-bottom: 10px;
 }
 
@@ -78,18 +83,9 @@ margin-bottom: 0px;
 .contact-btn svg:hover {
   transform: translateY(-6px);
   border-color: white;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4); /* Glow on hover */
+  box-shadow: 0 0 12px  #00CFFD;
   cursor: pointer;
-}.profile-img {
-  aspect-ratio: 1 / 1;                 
-  width: min(300px, 90vw);             
-  height: auto;                        
-  border-radius: 50%;                  
-  object-fit: cover;                   
-  display: block;
-  animation: floating 3s ease-in-out infinite;
 }
-
 
 
 @keyframes floating {
@@ -130,57 +126,69 @@ margin-bottom: 0px;
   z-index: 0;
 }
 
-/* Responsive design */
+
 @media screen and (max-width: 830px) {
   .body-container {
-    flex-direction: column-reverse;
-    align-items: center;
+   
+
+  flex-direction: column;
+    align-items: flex-start;      /* keep left-aligned */
+    justify-content: flex-start;
+    margin-top:10rem;
+   justify-content: center;    
+    margin-left: 5%;
+               
+    
   }
 
-  .container-title {
-    font-size: clamp(2.5rem, 4vw, 2.5rem);
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  }
-
+.typewriter-text {
+  font-size: 1.3rem;
+ 
+}
   .body-content {
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;      
+    text-align: left;
+  }
+  .container-title {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
   }
 
   .container-description {
-    
-    text-align: center;
+    font-size: 14px;
     margin-bottom: 10px;
+    width: 100%;
   }
 
-  .contact-btn {
-    font-size: 30px;
-    justify-content: center;
+  .contact-icon {
+    font-size: 40px;
     gap: 12px;
-    flex-wrap: wrap;
+    
+    justify-content: flex-start;
   }
 
-  .contact-btn svg {
-    padding: 8px;
-  }
 
   .topblur {
     display: none;
   }
-
-  .profile-img {
-    width: 70%;
-    height: 250px;
-    max-width: 300px;
-    border-radius: 50%;
-    display: block;
-    object-fit: cover;
-  }
 }
 
 @media screen and (max-width: 480px) {
+  .body-container {
+   
+
+  flex-direction: column;
+    align-items: flex-start;      /* keep left-aligned */
+    justify-content: flex-start;
+    margin-top:7rem;
+   justify-content: center;    
+    margin-left: 5%;
+               
+    
+  }
+  .body-container {
+    padding: 0 10px;
+  }
+
   .contact-btn {
     font-size: 30px;
     gap: 10px;
@@ -189,27 +197,9 @@ margin-bottom: 0px;
   .contact-btn svg {
     padding: 6px;
   }
-}
-/* Tablet Fix — iPads and similar screens */
-@media (min-width: 600px) and (max-width: 1024px) {
-  .hero {
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    gap: 2rem;
-  }
 
-  .profile-img {
-    aspect-ratio: 1 / 1;
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
+  .container-description {
+    font-size: 16px;
+    width: 100%
   }
-
-  .hero-text {
-    max-width: 90%;
-  }
-
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../assets/profile.jpg";
+
 import "../css/body.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
@@ -76,7 +76,6 @@ const Body = () => {
         </div>
       </div>
 
-      <img src={profileImage} className="profile-img" alt="profile" />
       <div className="topblur"></div>
       <div className="bottomblur"></div>
     </div>

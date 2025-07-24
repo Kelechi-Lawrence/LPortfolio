@@ -11,55 +11,102 @@
   
 .services{
     padding: 0 3rem 0 3rem;
-    
+
     height: 100%;
     margin-bottom: 4rem;
-    margin-top: 9rem;
+    margin-top: 4rem;
     
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
     
+    
+}
+.profile-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 10px;
+margin-left: 5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: translateY(-6px);
+  border-color: #00CFFD;
+  box-shadow: 0 0 100px 30px rgba(0, 207, 253, 0.6);
+  cursor: pointer;
+}
+
+
+  .card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+  
+  span.description{
+    font-size: 1rem;
+    color: grey;
+    font-weight: 500;
+  }
+  .description {
+  font-size: 1rem;
+  color: grey;
+  font-weight: 500;
+  background-color: #051d3f;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  height: auto;
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  right: 3rem;
+  margin-top: 1rem;
+}
+
+/* Resume Button */
+.Sbutton {
+  background-color: #00CFFD;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  width: fit-content;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 207, 253, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.Sbutton:hover {
+  background-color: #00a8cc;
+  box-shadow: 0 6px 14px rgba(0, 207, 253, 0.5);
+  cursor: pointer;
 }
 .awesome{
     display: flex;
+    gap: 15px;
     flex-direction: column;
     position: relative;
-    text-align: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .awesome > :nth-child(1){
-    text-align: center;
-    color: var(--textColor);
-    font-size: 4rem;
-    font-weight: bold;
-}
-.awesome > :nth-child(2){
-    text-align: center;
+    
     color: var(--textColor);
     font-size: 3.5rem;
     font-weight: bold;
 }
-.awesome > :nth-child(3){
-    color: gray;
-    font-size: 16px;
-    margin-top: 1rem;
-    text-align: center;
-}
-.Sbutton {
-    height: 60px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem; 
-    font-weight: 500;
-    font-size: 18px; 
-    margin-top: 1rem;
-    border-radius: 30px;
-    background-color:  #00CFFD;
-    cursor: pointer;
-    border: 2px solid white;
-    box-sizing: border-box; 
-}
+
+
 @media screen and (max-width: 830px) {
     .awesome > :nth-child(1),
 .awesome > :nth-child(2) {
@@ -68,5 +115,141 @@
     font-size: clamp(1.8rem, 4vw, 3.5rem); /* Min 1.8rem, scales with viewport, max 3.5rem */
     font-weight: bold;
 }
+.card{
+    display: flex;
+    flex-direction: column;
+}
 
+.profile-img {
+
+  display: block;
+  margin: 0;
+  max-width: 350px;
+  height: auto;    
+  max-height: 350px; 
+  object-fit: cover;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+  span.description{
+    font-size: 1rem;
+    color: grey;
+    font-weight: 500;
+  }
+ .description {
+  font-size: 1rem;
+  padding: 20px;
+  position: static;
+  width: 100%;
+  max-width: 90vw;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.5;
+  display: block;
+}
+
+.Sbutton {
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+.profile-img {
+    aspect-ratio: 1 / 1;
+    
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  }
+
+  .profile-img {
+    width: 22rem;
+    height: 25rem;
+    margin-left: 3rem;
+  }
+
+  .description {
+    text-align: left;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    max-width: 30rem;
+  }
+
+  .Sbutton {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .profile-img {
+    width: 22rem;
+    height: 25rem;
+    margin-left: 1rem;
+  }
+
+  .description {
+    text-align: left;
+    position: absolute;
+    top: 4rem;
+   
+    right: 0.2rem;
+    max-width: 20rem;
+  }
+
+  .Sbutton {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 819px) {
+ .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .profile-img {
+    width: 20rem;
+    height: 23rem;
+    margin-left: 0.5rem;
+  }
+
+  .description {
+    
+    position: absolute;
+    top: 4rem;
+   right: 0.1rem;
+    max-width: 20rem;
+  }
+
+  .Sbutton {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
 }
